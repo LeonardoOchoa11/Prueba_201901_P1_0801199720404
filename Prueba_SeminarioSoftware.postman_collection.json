@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "36799a23-9202-469b-a2eb-552e98c1bf5a",
+		"name": "Prueba_SeminarioSoftware",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/users/new/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "leo8a11@hotmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "algocomopasswordXZ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/new/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"new",
+						""
+					]
+				},
+				"description": "Registrar Nuevo Usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/users/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "leo8a11@hotmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Holamundo123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				},
+				"description": "Login al api backend"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/things",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/things",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/things",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/things",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things"
+					]
+				},
+				"description": "Obtener Cosas por hacer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/things/new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Empresa",
+							"value": "Supercell",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "https://www.youtube.com/channel/UC62hT7P4rX-FyuM3RQuGgnQ",
+							"type": "text"
+						},
+						{
+							"key": "Nombre",
+							"value": "Leonardo Ochoa",
+							"type": "text"
+						},
+						{
+							"key": "Year",
+							"value": "2019",
+							"type": "text"
+						},
+						{
+							"key": "Rating",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "fechaIng",
+							"value": "7/2/2019",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/things/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things",
+						"new"
+					]
+				},
+				"description": "Agregar nuevo Thing"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/things/done/1234adfP5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/things/done/1234adfP5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things",
+						"done",
+						"1234adfP5"
+					]
+				},
+				"description": "Marca el Thing por el ID por terminado"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/things/new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Empresa",
+							"value": "Supercell",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "https://www.youtube.com/channel/UC62hT7P4rX-FyuM3RQuGgnQ",
+							"type": "text"
+						},
+						{
+							"key": "Nombre",
+							"value": "Leonardo Ochoa",
+							"type": "text"
+						},
+						{
+							"key": "Year",
+							"value": "2019",
+							"type": "text"
+						},
+						{
+							"key": "Rating",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "fechaIng",
+							"value": "7/2/2019",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/things/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things",
+						"new"
+					]
+				},
+				"description": "Prueba Seminario de Software"
+			},
+			"response": []
+		}
+	]
+}
